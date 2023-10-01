@@ -90,7 +90,7 @@ function HeroImg(){
 
                      {/* product containers */}
                 <div className=' my-4'>
-                    <div className={`grid grid-flow-col justify-between overflow-hidden h-[200px] gap-2 md:gap-4 w-full`}>
+                    <div className={`grid grid-cols-1 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 xl:grid-cols-6 overflow-hidden h-[230px] gap-2 md:gap-4 w-full`}>
                         {displayedCard.map((product,index)=>(
                             <ProductCard onDetails={handleProductD}  key={index} product={product} index={index} pageSize={pageSize} active={currentIndex} /> 
                         ))}

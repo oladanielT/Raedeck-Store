@@ -25,7 +25,7 @@ function Navbar(){
                         <h1 className='text-xl font-bold'>Raedeck</h1>
                     </div>
                     
-                    <small className='mt-2 text-[14px]'>Africa's Most Reliable Camera Shop</small>  
+                    <small className='mt-2 hidden sm:block text-[14px]'>Africa's Most Reliable Camera Shop</small>  
                 </div>
                 <div className='flex items-center gap-4'>
                     <div className='relative cursor-pointer duration-500 transition-all ease-in-out hidden sm:block text-sm' >

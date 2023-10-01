@@ -45,17 +45,17 @@ const ProductDetails = ({productDetails, onHandle}) => {
 
 
     return(
-        <div className='w-full px-4 my-2'>
+        <div className='w-full  my-2'>
             <div className='flex flex-col md:flex-row gap-4'>
                 {/* product image */}
-                <div className='w-full md:w-[60%] h-[400px] p-1 flex gap-2 border-2'>
-                    <div className='w-[80%] h-full bg-gray-100'>
+                <div className='w-full md:w-[60%] h-[420px] p-1 flex gap-2 border-2'>
+                    <div className='w-[80%] h-full '>
                         <img className='w-full h-full' src={productDetails.img} alt="" />
                     </div>
 
                     <div className='w-[20%] h-full overflow-hidden '>
                         {productData.map((product, index) =>(
-                            <div className='w-full cursor-pointer h-[90px] mb-1 bg-gray-100'>
+                            <div className='w-full cursor-pointer sm:h-[90px] h-[50px] mb-1 bg-gray-100'>
                                 <img className='w-full h-full' src={product.img} alt="" />
                             </div>
                         ))}
@@ -64,7 +64,7 @@ const ProductDetails = ({productDetails, onHandle}) => {
                 </div>
 
                 {/* product details */}
-                <div className='w-full md:w-[40%] p-6 border-2 h-[400px] relative'>
+                <div className='w-full md:w-[40%] px-2  border-2  relative'>
                     <div className='absolute top-2 right-2'>
                         <AiOutlineClose size={15} onClick={()=>onHandle(false)} className='cursor-pointer shadow-sm' />
                     </div>
@@ -74,12 +74,12 @@ const ProductDetails = ({productDetails, onHandle}) => {
                     </div>
                     <div>
                         <div className='mt-2'>
-                            <ul className='flex text-[14px] justify-between'>
-                                <li onClick={()=>handleActiveDetails('description')} className={`cursor-pointer text-gray-400 ${active?"text-black font-bold":""}`}>Description</li>
-                                <li onClick={()=>handleActiveDetails('specification')} className={`cursor-pointer text-gray-400 ${active?"text-black":""}`}>Specificatio</li>
-                                <li onClick={()=>handleActiveDetails('pricing')} className={`cursor-pointer text-gray-400 ${active?"text-black":""}`}>Princing</li>
-                                <li onClick={()=>handleActiveDetails('packaging')} className={`cursor-pointer text-gray-400 ${active?"text-black":""}`}>Packaging</li>
-                                <li onClick={()=>handleActiveDetails('shipping')} className={`cursor-pointer text-gray-400 ${active?"text-black":""}`}>Shipping </li>
+                            <ul className='grid grid-cols-3 sm:flex sm:flex-wrap text-[12px] justify-between'>
+                                <li onClick={()=>handleActiveDetails('description')} className={`cursor-pointer hover:text-white m-1  p-1 border-2 hover:bg-black  text-gray-400 ${active?"text-black font-bold":""}`}>Description</li>
+                                <li onClick={()=>handleActiveDetails('specification')} className={`cursor-pointer hover:text-white m-1 p-1 border-2 hover:bg-black  text-gray-400 ${active?"text-black":""}`}>Specification</li>
+                                <li onClick={()=>handleActiveDetails('pricing')} className={`cursor-pointer hover:text-white m-1 p-1 border-2 hover:bg-black  text-gray-400 ${active?"text-black":""}`}>Princing</li>
+                                <li onClick={()=>handleActiveDetails('packaging')} className={`cursor-pointer hover:text-white m-1 p-1 border-2 hover:bg-black  text-gray-400 ${active?"text-black":""}`}>Packaging</li>
+                                <li onClick={()=>handleActiveDetails('shipping')} className={`cursor-pointer hover:text-white m-1 p-1 border-2 hover:bg-black  text-gray-400 ${active?"text-black":""}`}>Shipping </li>
                             </ul>
                             {details === 'description' && <DescriptionSection/>}
                             {details === 'specification' && <Specification/>}
