@@ -51,7 +51,6 @@ function Navbar(){
                     </div>
                    
                     <button className='border-2 px-2 py-1 hover:scale-105 border-black hidden sm:block '>Submit RFQ</button>
-                    <AiOutlineMenu size={28} className='sm:hidden'/>
                 </div>
             </div>
 

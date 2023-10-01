@@ -80,9 +80,9 @@ function HeroImg(){
                         </div>
 
                         {/* next/previous button */}
-                        <div  className='cursor-pointer flex items-center gap-2'>
-                            <AiOutlineLeft onClick={handlePrevious} size={25} className='p-1 rounded-lg border-2'/>
-                            <AiOutlineRight onClick={handleNext} size={25} className='p-1 rounded-lg border-2'/>
+                        <div  className='flex items-center gap-3'>
+                            <AiOutlineLeft onClick={handlePrevious} size={25} className='p-1 cursor-pointer  rounded-lg border-2'/>
+                            <AiOutlineRight onClick={handleNext} size={25} className='p-1 cursor-pointer  rounded-lg border-2'/>
                         </div>
 
                     </div>
