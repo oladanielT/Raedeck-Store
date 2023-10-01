@@ -16,7 +16,7 @@ function Request(){
                             <input type="text" name="" placeholder='Your Name' id="" className='focus:outline-none w-full' />
                             <input type="text" name="" placeholder='Email Address' id="" className='focus:outline-none w-full' />
                             <div className='gap-4 sm:flex mt-4 mb-1 items-center'>
-                                <span className='w-full my-2 h-[45px] md:hidden flex justify-center items-center gap-1 bg-gray-100 '><input type="file" name="" id="" className='hidden'/><span className='font-bold'>Upload file</span> (optional)</span>
+                                <span className='w-full mb-3 h-[45px] md:hidden flex justify-center items-center gap-1 bg-gray-100 '><input type="file" name="" id="" className='hidden'/><span className='font-bold'>Upload file</span> (optional)</span>
                                 <button className='w-full h-[45px] py-2 bg-black text-white'>Submit</button>                       
                             </div>
 

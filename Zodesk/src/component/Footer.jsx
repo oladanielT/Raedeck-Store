@@ -3,7 +3,7 @@ import {TiSocialFacebookCircular, TiSocialInstagram, TiSocialLinkedin} from 'rea
 function Footer(){
 
     return (
-        <div className='px-4 text-[13px] border-2'>
+        <div className='px-4 text-[13px]'>
             <div>
                 <div className='flex items-center gap-2 mb-6'>
                     <TiSocialFacebookCircular size={30}/>

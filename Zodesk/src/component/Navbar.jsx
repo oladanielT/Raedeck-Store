@@ -1,6 +1,5 @@
 import React, {useState} from 'react';
 import logoo from '../images/logoo.png';
-import { AiOutlineMenu } from 'react-icons/ai';
 
 
 function Navbar(){
@@ -19,14 +18,14 @@ function Navbar(){
 
     return(
         <div className='w-full px-4 py-2'>
-            <div className='flex justify-between items-center '>
-                <div className='flex justify-start items-center gap-2'>
+            <div className='flex justify-between items-end '>
+                <div className='flex justify-start items-center gap-3'>
                     <div className='flex items-center gap-3'>
                         <img className='w-[40px] h-[30px] object-center ' src={logoo} alt="logo" />
                         <h1 className='text-xl font-bold'>Raedeck</h1>
                     </div>
                     
-                    <small className='mt-2'>Africa's Most Reliable Camera Shop</small>  
+                    <small className='mt-2 text-[14px]'>Africa's Most Reliable Camera Shop</small>  
                 </div>
                 <div className='flex items-center gap-4'>
                     <div className='relative cursor-pointer duration-500 transition-all ease-in-out hidden sm:block text-sm' >

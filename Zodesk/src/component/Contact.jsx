@@ -15,7 +15,7 @@ function Contact(){
                 <h1 className='text-[15px] font-bold my-2'>Contact Us</h1>
                 {/* Admin contacts */}
                 <div className='grid grid-cols-1 sm:grid-cols-2 gap-8 md:grid-cols-4 md:gap-12'>
-                <div className='mb-6 border-2 p-2'>
+                <div className='mb-4 p-2'>
                     <div className='flex flex-col  items-between gap-10 border-t-4 py-3 my-2 border-t-black'>
                         <div>
                                 <span className='text-lg font-bold'>Mandy Ben</span>
@@ -29,7 +29,7 @@ function Contact(){
                 </div>   
                  {/*End of each contacts  */}
 
-                 <div className='mb-6 border-2 p-2'>
+                 <div className='mb-4 p-2'>
                     <div className='flex flex-col items-between gap-10 border-t-4 py-3 my-2 border-t-black'>
                         <div>
                                 <span className='text-lg font-bold'>Mandy Ben</span>
@@ -42,7 +42,7 @@ function Contact(){
                 </div>   
                  {/*End of each contacts  */}
 
-                 <div className='mb-6 border-2 p-2'>
+                 <div className='mb-4 p-2'>
                     <div className='flex flex-col items-between gap-10 border-t-4 py-3 my-2 border-t-black'>
                         <div>
                                 <span className='text-lg font-bold'>Mandy Ben</span>
@@ -55,7 +55,7 @@ function Contact(){
                 </div>   
                  {/*End of each contacts  */}
 
-                 <div className='mb-6 border-2 p-2'>
+                 <div className='mb-4 p-2'>
                     <div className='flex flex-col items-between gap-10 border-t-4 py-3 my-2 border-t-black'>
                         <div>
                                 <span className='text-lg font-bold'>Mandy Ben</span>
